@@ -27,7 +27,7 @@ a{
 .brand{
     margin-top:0px;
     border: 1px solid rgb(175, 175, 175);
-    border-radius: 10px;
+    border-radius: 0px;
     padding: 4px;
     background-color: rgb(255, 82, 82);
     display: flex;
@@ -62,6 +62,16 @@ a{
     width: 50px;
 }
 
+#ava{
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 .body{
     display: flex;
@@ -88,14 +98,65 @@ a{
     margin-bottom: 10px;
     box-shadow: 0px 1px 11px 1px rgba(0,0,0,0.10);
 }
-.container img{
-    width: 260px;
-    height: 260px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.movie{
+    display: flex;
 }
-.container h1{
-    text-align: center;
+.link a img{
+    width: 100%;
 }
+.link{
+    width: 40%;
+}
+.ditails{
+    width: 60%;
+    color: rgb(66, 66, 66);
+    margin-left: 30px;
+
+}
+
+.headline{
+    color: rgb(100, 100, 100);
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .right{
+        display: none;
+        width: 0%;
+    }
+    .left{
+        display: none;
+        width: 0%;
+    }
+    .center{
+        width: 100%;
+    }
+    .container{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .movie{
+        display: block
+    }
+    .ditails{
+        width: 100%;
+        margin-left: 0px;
+    
+    }
+    .link{
+        width: 60%;
+    }
+    .brand{
+        padding: 0px;
+    }
+    #link{
+        font-size: 22px;
+        
+
+    }
+    #brand-name{
+        display: none;
+    }
+  }
